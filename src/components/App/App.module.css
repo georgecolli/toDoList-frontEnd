@@ -4,11 +4,22 @@ body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: large;
-  background: linear-gradient(45deg, #696b80 0%, #575757 83%);
+  background-image: url(../../Images/two-jack-lake-serenity-ozero.jpeg);
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
   padding: 1em;
 }
 
 #heading {
-  font: 700;
+  font: 1000;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
 }

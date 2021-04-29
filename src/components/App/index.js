@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import css from "./App.module.css";
 import Input from "../Input";
 import List from "../List";
-import Weather from "../Weather";
 
 function App() {
   const [todos, setToDos] = useState([]);
