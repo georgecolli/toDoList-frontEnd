@@ -1,8 +1,9 @@
 import React from "react";
+import css from "./Input.module.css";
 
 function Input({ updateItemFromList, addItemToList, text }) {
   return (
-    <div className="input">
+    <div className={css.input}>
       <input
         className="input"
         onChange={(event) => updateItemFromList(event)}

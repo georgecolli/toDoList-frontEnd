@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import css from "./App.module.css";
 import Input from "../Input";
 import List from "../List";
 import Weather from "../Weather";
@@ -14,6 +14,7 @@ function App() {
 
   async function getToDos() {
     let response = await fetch(process.env.REACT_APP_BACKEND_URL);
+    console.log("hello");
     let data = await response.json();
     setToDos(data);
   }
@@ -36,8 +37,8 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div id="heading">
+    <div className={css.App}>
+      <div id={css.heading}>
         <h1 className="heading1">To Do List</h1>
       </div>
       <Input
